@@ -18,7 +18,7 @@ feature_vector=vectorizer.fit_transform(combined)
 similarity=cosine_similarity(feature_vector)
 
 ind = []
-for i in range(7646):
+for i in range(len(movies.name)):
     ind.append(i)
     
 movies['index'] = ind
